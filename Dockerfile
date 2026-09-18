@@ -8,7 +8,7 @@ COPY ./settings.gradle .
 
 COPY src ./src
 
-RUN gradle build --no-daemond
+RUN gradle build --no-daemon
 
 # STAGE 2
 FROM eclipse-temurin:21-jdk-jammy
